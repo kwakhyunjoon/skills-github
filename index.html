@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-bottom: 2rem;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+
+        .course-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .course-card.completed {
+            background: #34c759;
+        }
+
+        .course-card.completed .course-title,
+        .course-card.completed .course-description {
+            color: #000000;
+        }
+
+        .course-title {
+            font-size: 1.2rem;
+            color: #58a6ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-description {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Skills</h1>
+            <p class="subtitle">Courses I have completed will be highlighted in green</p>
+        </header>
+
+        <div class="course-section">
+            <h2 class="section-title">First Day on GitHub</h2>
+            <div class="courses-grid">
+                <a href="https://github.com/kwakhyunjoon/skills-introduction-to-github" class="course-card completed">
+                    <h3 class="course-title">Introduction to GitHub</h3>
+                    <p class="course-description">Learn the basics of GitHub in less than an hour.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-communicate-using-markdown" class="course-card completed">
+                    <h3 class="course-title">Communicate using Markdown</h3>
+                    <p class="course-description">Organize ideas and collaborate using Markdown, a lightweight language for text formatting.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-github-pages" class="course-card completed">
+                    <h3 class="course-title">GitHub Pages</h3>
+                    <p class="course-description">Create a website or blog from your GitHub repositories.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="course-section">
+            <h2 class="section-title">First Week on GitHub</h2>
+            <div class="courses-grid">
+                <a href="https://github.com/skills/review-pull-requests" class="course-card">
+                    <h3 class="course-title">Review Pull Requests</h3>
+                    <p class="course-description">Learn how to collaborate and work together on GitHub.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-resolve-merge-conflicts" class="course-card completed">
+                    <h3 class="course-title">Resolve Merge Conflicts</h3>
+                    <p class="course-description">Learn why conflicts happen and how to resolve them.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-release-based-workflow" class="course-card completed">
+                    <h3 class="course-title">Release-based Workflow</h3>
+                    <p class="course-description">Practice a release-based workflow and explore branching strategies.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-connect-the-dots" class="course-card completed">
+                    <h3 class="course-title">Connect the Dots</h3>
+                    <p class="course-description">Find relevant conversations, commits, and projects in a repository.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-code-with-codespaces" class="course-card completed">
+                    <h3 class="course-title">Code with Codespaces</h3>
+                    <p class="course-description">Develop code using GitHub Codespaces and Visual Studio Code.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-introduction-to-repository-management" class="course-card completed">
+                    <h3 class="course-title">Introduction to Repository Management</h3>
+                    <p class="course-description">Learn the basics of several features for a collaborative, friendly, and healthy project.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="course-section">
+            <h2 class="section-title">Take Flight with GitHub Copilot</h2>
+            <div class="courses-grid">
+                <a href="https://github.com/kwakhyunjoon/skills-getting-started-with-github-copilot" class="course-card completed">
+                    <h3 class="course-title">Getting Started with GitHub Copilot</h3>
+                    <p class="course-description">Learn, build, debug, and ship faster than ever with your favorite AI pair programmer.</p>
+                </a>
+                <a href="https://github.com/skills/your-first-extension-for-github-copilot" class="course-card">
+                    <h3 class="course-title">Your First Copilot Extension</h3>
+                    <p class="course-description">Teach GitHub Copilot about your industry, lingo, and company processes.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-integrate-mcp-with-copilot" class="course-card completed">
+                    <h3 class="course-title">Integrate MCP with Copilot</h3>
+                    <p class="course-description">Give GitHub Copilot more tools to enhance its capabilities.</p>
+                </a>
+                <a href="https://github.com/skills/expand-your-team-with-copilot" class="course-card">
+                    <h3 class="course-title">Expand Your Team with Copilot Coding Agent</h3>
+                    <p class="course-description">Let Copilot coding agent tackle your issues directly on GitHub.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="course-section">
+            <h2 class="section-title">Automate Workflows with GitHub Actions</h2>
+            <div class="courses-grid">
+                <a href="https://github.com/kwakhyunjoon/skills-hello-github-actions" class="course-card completed">
+                    <h3 class="course-title">Hello GitHub Actions</h3>
+                    <p class="course-description">Create a GitHub Action and use it in a workflow.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-test-with-actions" class="course-card completed">
+                    <h3 class="course-title">Test with Actions</h3>
+                    <p class="course-description">Create workflows that enable you to use Continuous Integration (CI) for your projects.</p>
+                </a>
+                <a href="https://github.com/skills/publish-packages" class="course-card">
+                    <h3 class="course-title">Publish Packages</h3>
+                    <p class="course-description">Use GitHub Actions to publish your project to a Docker image.</p>
+                </a>
+                <a href="https://github.com/skills/deploy-to-azure" class="course-card">
+                    <h3 class="course-title">Deploy to Azure</h3>
+                    <p class="course-description">Create a deployment workflow using GitHub Actions and Microsoft Azure.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-write-javascript-actions" class="course-card completed">
+                    <h3 class="course-title">Write JavaScript Actions</h3>
+                    <p class="course-description">Write your own GitHub JavaScript Action.</p>
+                </a>
+                <a href="https://github.com/skills/reusable-workflows" class="course-card">
+                    <h3 class="course-title">Reusable Workflows</h3>
+                    <p class="course-description">Make a workflow reusable in other workflows.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="course-section">
+            <h2 class="section-title">Code Security and Analysis</h2>
+            <div class="courses-grid">
+                <a href="https://github.com/skills/secure-repository-supply-chain" class="course-card">
+                    <h3 class="course-title">Secure Your Repository Supply Chain</h3>
+                    <p class="course-description">Secure your supply chain, patch dependency vulnerabilities.</p>
+                </a>
+                <a href="https://github.com/skills/secure-code-game" class="course-card">
+                    <h3 class="course-title">Secure Code Game</h3>
+                    <p class="course-description">Learn about software security in a fun, educational environment.</p>
+                </a>
+                <a href="https://github.com/skills/introduction-to-codeql" class="course-card">
+                    <h3 class="course-title">Introduction to CodeQL</h3>
+                    <p class="course-description">Learn how to enable CodeQL to secure your code.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-change-commit-history" class="course-card completed">
+                    <h3 class="course-title">Change Commit History</h3>
+                    <p class="course-description">Learn how to change commit history with Git.</p>
+                </a>
+                <a href="https://github.com/kwakhyunjoon/skills-introduction-to-secret-scanning" class="course-card completed">
+                    <h3 class="course-title">Introduction to Secret Scanning</h3>
+                    <p class="course-description">Enable secret scanning and take a feature tour.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
