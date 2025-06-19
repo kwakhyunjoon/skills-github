@@ -12,56 +12,36 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
         }
 
+        /* Light mode styles (기본값) */
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: #ffffff;
+            color: #24292f;
             line-height: 1.5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 4rem;
         }
 
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            color: #ffffff;
+            color: #24292f;
         }
 
         .subtitle {
             font-size: 1.2rem;
-            color: #8b949e;
+            color: #656d76;
             margin-bottom: 2rem;
-        }
-
-        .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .course-section {
-            margin-bottom: 4rem;
         }
 
         .section-title {
             font-size: 1.5rem;
-            color: #ffffff;
+            color: #24292f;
             margin-bottom: 1.5rem;
-            border-bottom: 1px solid #30363d;
+            border-bottom: 1px solid #d0d7de;
             padding-bottom: 0.5rem;
         }
 
         .course-card {
-            background: #161b22;
-            border: 1px solid #30363d;
+            background: #f6f8fa;
+            border: 1px solid #d0d7de;
             border-radius: 6px;
             padding: 1.5rem;
             transition: transform 0.2s, box-shadow 0.2s;
@@ -71,7 +51,7 @@
 
         .course-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
         }
 
         .course-card.completed {
@@ -85,13 +65,72 @@
 
         .course-title {
             font-size: 1.2rem;
-            color: #58a6ff;
+            color: #0969da;
             margin-bottom: 0.5rem;
         }
 
         .course-description {
-            color: #8b949e;
+            color: #656d76;
             font-size: 0.9rem;
+        }
+
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0d1117;
+                color: #c9d1d9;
+            }
+
+            h1 {
+                color: #ffffff;
+            }
+
+            .subtitle {
+                color: #8b949e;
+            }
+
+            .section-title {
+                color: #ffffff;
+                border-bottom: 1px solid #30363d;
+            }
+
+            .course-card {
+                background: #161b22;
+                border: 1px solid #30363d;
+            }
+
+            .course-card:hover {
+                box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            }
+
+            .course-title {
+                color: #58a6ff;
+            }
+
+            .course-description {
+                color: #8b949e;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-section {
+            margin-bottom: 4rem;
         }
 
         @media (max-width: 768px) {
